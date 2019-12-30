@@ -1,4 +1,4 @@
 module.exports = {
-  "rootUrl" : "https://site-root-url.com",
+  "rootUrl" : "https://climate.gsb.columbia.edu",
   "buildTime" : new Date()
 }

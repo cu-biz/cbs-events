@@ -5,13 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.typekit.net/rrr6wuy.css">
     <link rel="stylesheet" href="/css/styles.css">
-    <title>{{ title }}</title>
+    <title>{{ firstNames }} {{ lastNames }} | The Financial Costs of a Warming Planet</title>
   </head>
-  <body {% if bodyClass %}class="{{ bodyClass }}"{% endif %}>
+  <body {% if tags %}class="{{ tags }}"{% endif %}>
 
     <div class="container">
       {% include "header.njk" %}
-      {{ content | safe }}
+      <article>
+        <header>
+          <figure>
+            <img src="../../images/{{ img }}" alt="{{ imgAlt }}">
+          </figure>
+          <div class="speaker-meta">
+            <h1>{{ firstNames }} {{ lastNames }}</h1>
+            <p class="affiliations">
+              {{ affiliations }}
+            </p>
+          </div>
+        </header>
+        {{ content | safe }}
+      </article>
       {% include "footer.njk" %}
     </div>
 

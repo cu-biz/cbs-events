@@ -1,0 +1,4 @@
+{
+  "tags" : "sessions",
+  "templateEngineOverride": "njk,md"
+}

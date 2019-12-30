@@ -1,0 +1,5 @@
+{
+  "layout" : "layouts/speaker.njk",
+  "tags" : "speakers",
+  "templateEngineOverride": "njk,md"
+}

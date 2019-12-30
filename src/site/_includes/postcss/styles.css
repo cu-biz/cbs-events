@@ -1,5 +1,7 @@
 @import '_variables.css';
+@import '_typography.css';
 @import '_syntax.css';
+@import url("https://use.typekit.net/pso1vnn.css");
 
 * {
   margin: 0;
@@ -16,23 +18,21 @@
 }
 
 html {
-  background-color: $accent-color;
+
 }
 
 body {
   text-align: center;
   background-color: $page-color;
-  color: mix($text-color, $page-color, 90%);
-  font-family: sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 1.8;
+  color: $text-color;
+  font-family: neue-haas-grotesk-text, helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 10.5pt;
+  line-height: 1.6;
   min-height: 100vh;
   background:  $page-color;
-  background: url(/images/bg-grid.png), linear-gradient(320deg, $page-color 0%, $accent-color 100%);
-
   @media (min-width: $narrow) {
-    font-size: 18px;
+
   };
 }
 
@@ -49,41 +49,10 @@ body {
   };
 }
 
-
-h1, h2, h3 {
-  color: $text-color;
-  font-weight: 600;
-  margin-top: 2em;
-  margin-bottom:0.2em;
-  line-height: 1;
-}
-h1 {
-  font-size: 3em;
-  margin-top:0.4em;
-  margin-bottom:0.2em;
-  line-height: 1;
-
-  @media (min-width: $mid) {
-    font-size: 5em;
-  };
-  @media (min-width: $wide) {
-    font-size: 6em;
-  };
-}
-
-p {
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
 .subtitle {
   font-size: 1.2em;
   margin-top: 1em;
   margin-bottom: 5em;
-}
-
-ul, ol {
-  padding-left: 1em;
 }
 
 a:link,
@@ -100,12 +69,6 @@ a:focus {
   border-bottom-color: $text-color;
 }
 
-.nakedLink a:link,
-.nakedLink a:visited,
-.nakedLink a:hover,
-.nakedLink a:focus {
-  border-bottom-style:none;
-}
 
 .nav {
   padding-top: 3em;
@@ -117,10 +80,6 @@ a:focus {
   a:link,
   a:visited {
     display: inline-block;
-    border-top-style: solid;
-    border-top-width: 1px;
-    border-top-color: mix($text-color, $accent-color, 40%);
-    border-bottom-style: none;
     padding-top: 0.8em;
     padding-bottom: 2em;
     margin-left: 0;
@@ -142,19 +101,6 @@ a:focus {
     font-size: 0.7em;
     color: mix($text-color,$accent-color, 60%);
   }
-}
-
-
-code {
-  font-size: 0.8em;
-  background-color: mix($text-color,$accent-color, 80%);
-  color: rgb(42, 65, 77);
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 6px;
-  padding-right: 6px;
-  border-radius: 4px;
-  white-space: nowrap;
 }
 
 .date {
@@ -199,4 +145,23 @@ footer {
     color: $text-color;
     border-bottom: solid 1px $text-color;
   }
+}
+
+
+.speaker article header {
+  margin:2rem 0;
+  display:flex;
+}
+
+.speaker article header img {
+  width:100%;
+}
+
+.speaker article header figure {
+  flex-basis:25%;
+  margin-right:1rem;
+}
+
+.speaker .speaker-meta {
+  flex-basis:75%;
 }

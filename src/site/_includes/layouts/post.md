@@ -1,6 +1,6 @@
 ---
-layout: layouts/base.njk
-pageClass: posts
+layout: layouts/speaker.njk
+pageClass: speaker
 templateEngineOverride: njk, md
 ---
 
