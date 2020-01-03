@@ -19,7 +19,6 @@ collections:
       - { label: "Last Names", name: "lastNames", widget: "string" }
       - { label: "Titles & Affiliations", name: "affiliations", widget: "string" }
       - { label: "Image Alt Text", name: "imgAlt", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Biography", name: "body", widget: "markdown" }
   # Our sessions
   - name: "sessions" # Used in routes, e.g., /admin/collections/blog
@@ -30,6 +29,6 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Location", name: "location", widget: "string" }
-      - { label: "Start Time", name: "startTime", widget: "dateTime" }
-      - { label: "End Time", name: "endTime", widget: "dateTime" }
+      - { label: "Start Time", name: "startTime", widget: "datetime" }
+      - { label: "End Time", name: "endTime", widget: "datetime" }
       - { label: "Headshot", name: "img", widget: "image" }
