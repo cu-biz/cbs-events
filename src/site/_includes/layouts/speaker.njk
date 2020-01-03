@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.typekit.net/rrr6wuy.css">
     <link rel="stylesheet" href="/css/styles.css">
-    <title>{{ firstNames }} {{ lastNames }} | The Financial Costs of a Warming Planet</title>
+    <title>{{ name }} | The Financial Costs of a Warming Planet</title>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body {% if tags %}class="{{ tags }}"{% endif %}>
@@ -18,7 +18,7 @@
             <img src="../../images/{{ img }}" alt="{{ imgAlt }}">
           </figure>
           <div class="speaker-meta">
-            <h1>{{ firstNames }} {{ lastNames }}</h1>
+            <h1>{{ name }}</h1>
             <p class="affiliations">
               {{ affiliations }}
             </p>

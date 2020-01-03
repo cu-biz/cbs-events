@@ -1,6 +1,6 @@
 ---
-firstNames: Geoff
-lastNames: Heal
+name: Geoff Heal
+sortName: Heal Geoff
 affiliations: Co-Director, Elizabeth B. Strickler ’86 and Mark T. Gallogly ’86 Faculty Director, and Professor of Professional Practice, Tamer Center for Social Enterprise
 img: usher.jpg
 imgAlt: Bruce Usher

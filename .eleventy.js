@@ -25,8 +25,8 @@ module.exports = function(config) {
       return a.data.startTime - b.data.startTime;
     });
 
-    let allSpeakers = collection.getAll().filter(function(item){ return item.data.lastNames }).sort(function(a, b) {
-      return a.data.lastNames - b.data.lastNames;
+    let allSpeakers = collection.getAll().filter(function(item){ return item.data.sortName }).sort(function(a, b) {
+      return a.data.sortName - b.data.sortNames;
     });
 
     allSessions.forEach((x) => {

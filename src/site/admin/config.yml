@@ -14,10 +14,10 @@ collections:
     folder: "src/site/speakers" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "" # Filename template, e.g., YYYY-MM-DD-title.md
-    identifier_field: firstNames + lastNames
+    identifier_field: name
     fields: # The fields for each document, usually in front matter
-      - { label: "First Names", name: "firstNames", widget: "string" }
-      - { label: "Last Names", name: "lastNames", widget: "string" }
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Sort Name", name: "sortName", widget: "string" }
       - { label: "Titles & Affiliations", name: "affiliations", widget: "string" }
       - { label: "Headshot", name: "img", widget: "image", required: false }
       - { label: "Image Alt Text", name: "imgAlt", widget: "string" }

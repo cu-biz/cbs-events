@@ -1,6 +1,6 @@
 ---
-firstNames: Bruce
-lastNames: Usher
+name: Bruce Usher
+sortName: Usher Bruce
 affiliations: Co-Director, Elizabeth B. Strickler ’86 and Mark T. Gallogly ’86 Faculty Director, and Professor of Professional Practice, Tamer Center for Social Enterprise
 img: usher.jpg
 imgAlt: Bruce Usher
