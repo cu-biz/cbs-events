@@ -56,6 +56,7 @@ module.exports = function(config) {
 
   // pass some assets right through
   config.addPassthroughCopy("./src/site/images");
+  config.addPassthroughCopy("./src/site/admin");
   config.addPassthroughCopy({"./src/site/icons": "/"});
 
   // make the seed target act like prod
