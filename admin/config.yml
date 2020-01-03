@@ -1,0 +1,38 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+
+# Uncomment below to enable drafts
+# publish_mode: editorial_workflow
+
+media_folder: "static/img" # Media files will be stored in the repo under images/uploads
+
+collections:
+  # Our speakers
+  - name: "speakers" # Used in routes, e.g., /admin/collections/blog
+    label: "Speaker" # Used in the UI
+    folder: "speakers" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: "First Names", name: "firstNames", widget: "string" }
+      - { label: "Last Names", name: "lastNames", widget: "string" }
+      - { label: "Titles & Affiliations", name: "affiliations", widget: "string" }
+      - { label: "Headshot", name: "img", widget: "image" }
+      - { label: "Image Alt Text", name: "imgAlt", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
+      - { label: "Biography", name: "body", widget: "markdown" }
+  # Our sessions
+  - name: "sessions" # Used in routes, e.g., /admin/collections/blog
+    label: "Session" # Used in the UI
+    folder: "sessions" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Location", name: "location", widget: "string" }
+      - { label: "Start Time", name: "startTime", widget: "dateTime" }
+      - { label: "End Time", name: "endTime", widget: "dateTime" }
+      - { label: "Headshot", name: "img", widget: "image" }
