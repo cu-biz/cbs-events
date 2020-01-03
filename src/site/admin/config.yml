@@ -18,7 +18,7 @@ collections:
       - { label: "First Names", name: "firstNames", widget: "string" }
       - { label: "Last Names", name: "lastNames", widget: "string" }
       - { label: "Titles & Affiliations", name: "affiliations", widget: "string" }
-            - { label: "Headshot", name: "img", widget: "image", required: "false" }
+      - { label: "Headshot", name: "img", widget: "image", required: "false" }
       - { label: "Image Alt Text", name: "imgAlt", widget: "string" }
       - { label: "Biography", name: "body", widget: "markdown" }
   # Our sessions
