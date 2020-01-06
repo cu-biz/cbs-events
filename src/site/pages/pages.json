@@ -1,0 +1,6 @@
+{
+  "layout" : "layouts/base.njk",
+  "tags" : "page",
+  "templateEngineOverride": "njk,md",
+  "permalink": "./{{ page.fileSlug }}/index.html"
+}

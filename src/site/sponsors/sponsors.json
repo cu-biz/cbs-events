@@ -1,0 +1,4 @@
+{
+  "tags" : "sponsor",
+  "templateEngineOverride": "njk,md"
+}
