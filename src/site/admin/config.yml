@@ -7,6 +7,10 @@ backend:
 
 media_folder: "src/site/images" # Media files will be stored in the repo under images/uploads
 
+slug:
+  encoding: "ascii"
+  clean_accents: true
+
 collections:
   # Our speakers
   - name: "speakers" # Used in routes, e.g., /admin/collections/blog

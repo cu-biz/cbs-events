@@ -1,16 +1,4 @@
-<header>
-  <ul class="nav">
-    <li>
-      <a href="/">home</a>
-    </li>
-    <li>
-      <a href="/agenda">agenda</a>
-    </li>
-    <li>
-      <a href="/speakers">speakers</a>
-    </li>
-    <li>
-      <a href="/register">register</a>
-    </li>
-  </ul>
+<header id="main-header">
+  {% include "logo.njk" %}
+  <button aria-label="Open Navigation" onclick="mainNav.open()" id="nav-open"></button>
 </header>

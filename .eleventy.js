@@ -32,7 +32,7 @@ module.exports = function(config) {
     allSessions.forEach((x) => {
       x.data.speakers = allSpeakers.filter(function(item){ return item.data.sessions === x.data.title });
     });
-    // console.log(allSessions[0].data.speakers);
+    // console.log(allSessions[0].data.page);
     return allSessions;
   });
 

@@ -1,0 +1,51 @@
+.active {
+  
+  .main-nav {
+    position:absolute;
+    padding: 3em 1rem 1rem 2rem;
+    top:0;
+    right:0;
+    bottom:0;
+    width:90%;
+    background:rgba(24,26,28,.95);
+
+    li {
+     list-style-type:none;
+     margin-bottom:.5rem;
+     text-transform: capitalize;
+     font-weight: 700;
+     font-size:1.44rem;
+    }
+
+    a:link,
+    a:visited {
+      display: block;
+      text-align: left;
+      color: $page-color;
+      text-decoration: none;
+    }
+    a:hover,
+    a:focus {
+      paadding-bottom:1rem;
+      border-bottom: 1px solid $accent-color;
+    }
+
+    #nav-open, #nav-close {
+      display:block;
+      height:26px;
+      width:26px;
+    }
+
+    #nav-close:before, #nav-close:after {
+      content:"";
+      display:block;
+      height:2px;
+      color:$page-color;
+    }
+
+    #nav-close:before {
+      transform-origin: center center;
+      transform: rotate(45deg);
+    }
+  }
+}

@@ -1,90 +1,74 @@
 ---
-title: EleventyOne
-subtitle: A project scaffold for getting building with Eleventy quickly.<br /> Made by <a href="https://twitter.com/philhawksworth">Phil</a> for <a href="https://twitter.com/philhawksworth">Phil</a>, but perhaps you might also find it useful.
+title: Burning Money
+subtitle: The Financial Costs of a Warming Planet
 layout: layouts/base.njk
 ---
 
+<div class="hero">
+	<header>
+		<h1>{{ title }}</h1>
+		<p>{{ subtitle }}</p>
+	</header>
+	{% include "nav.njk" %}
+</div>
 
-## This site is a starting point
+<div class="wrapper">
+	<section class="agenda">
+		<h2>Agenda</h2>
+		{%- for page in collections.newAgenda -%}
+			<article>
+				<time class="event-time" datetime="{{ page.data.startTime }}">{{ page.data.startTime | dateDisplay("t") }}</time>
+				<h3><a href="{{ page.url }}">{{ page.data.title }}</a></h3>
+				<p class="event-description">{{ page.data.description }}</p>
+				{%- for item in page.data.speakers -%}
+				<div class="speaker">
+					<h4>{{ item.data.name }}</h4>
+				</div>
+				{%- endfor -%}
+				</article>
+		{%- endfor -%}
+	</section>
+</div>
 
-From this point we should already have:
+<div class="wrapper">
+	<section class="speakers">
+		<h2>Speakers</h2>
+		{%- for page in collections.speakers -%}
+		  <article>
+		    <a href="{{ page.url }}">
+		      	<img src="../images/{{ page.data.img }}" alt="{{ page.data.imgAlt }}">
+		      	<h3>{{ page.data.name }}</h3>
+				<p>{{ page.data.affiliations }}</p>
+		    </a>
+		  </article>
+		{%- endfor -%}
+	</section>
+</div>
 
-- [Eleventy](https://11ty.io) with a skeleton site
-- A date format filter for Nunjucks based on [Luxon](https://moment.github.io/luxon)
-- A tiny CSS pipeline with PostCSS
-- A tiny inline JS pipeline. (<a href="#" class="btn-log">Test a console.log message</a>)
-- JS [search index](/search.json) generator
-- [Netlify Dev](https://www.netlify.com/products/dev) for testing [Netlify redirects](https://netlify.com/docs/redirects/)
-- Serverless (FaaS) development pipeline with [Netlify Dev](https://www.netlify.com/products/dev) and [Netlify Functions](https://www.netlify.com/products/functions)
+<div class="wrapper">
+	<section class="sponsors">
+		<h2>Sponsors</h2>
+		{%- for page in collections.sponors -%}
+		  <article>
+		    <a href="{{ page.data.url }}">
+		      <img src="../images/{{ page.data.img }}" alt="{{ page.data.imgAlt }}">
+		    </a>
+		  </article>
+		{%- endfor -%}
+	</section>
+</div>
 
-
-
-## Post pages
-
-The pages found in in the posts
-
-<ul class="listing">
-{%- for page in collections.post -%}
-  <li>
-    <a href="{{ page.url }}">{{ page.data.title }}</a> -
-    <time datetime="{{ page.date }}">{{ page.date | dateDisplay("LLLL d, y") }}</time>
-  </li>
-{%- endfor -%}
-</ul>
-
-## Links from an external data source
-
-These links were sourced from [hawksworx.com](https://www.hawksworx.com/feed.json) at build time.
-
-<ul class="listing">
-{%- for item in hawksworx.entries.slice(0,5) -%}
-  <li>
-    <a href="{{ item.link }}">{{ item.title }}</a>
-  </li>
-{%- endfor -%}
-</ul>
-
-
-## Prerequisite
-
-- [Node and NPM](https://nodejs.org/)
-
-## Running locally
-
-```bash
-# install the dependencies
-npm install
-
-# External data sources can be stashed locally
-npm run seed
-
-# It will then be available locally for building with
-npm run start
-```
-
-## Add some Netlify helpers
-Netlify Dev adds the ability to use Netlify redirects, proxies, and serverless functions.
-
-```bash
-# install the Netlify CLI in order to get Netlify Dev
-npm install -g netlify-cli
-
-# run a local server with some added Netlify sugar in front of Eleventy
-netlify dev
-```
-
-A serverless functions pipeline is included via Netlify Dev. By running `netlify dev` you'll be able to execute any of your serverless functions directly like this:
-
-- [/.netlify/functions/hello](/.netlify/functions/hello)
-- [/.netlify/functions/fetch-joke](/.netlify/functions/fetch-joke)
-
-### Redirects and proxies
-
-Netlify's Redirects API can provide friendlier URLs as proxies to these URLs.
-
-- [/api/hello](/api/hello)
-- [/api/fetch-joke](/api/fetch-joke)
-
-
-
-
+<div class="wrapper">
+	<section class="register">
+		<h2>Register</h2>
+		<form>
+			<label for="first-name">First Name</label>
+			<input type="text" name="fname" value="" size="40" id="first-name" aria required="true" aria-invalid="false" />
+			<label for="flast-name">Last Name</label>
+			<input type="text" name="lname" value="" size="40" id="last-name" aria required="true" aria-invalid="false" />
+			<label for="e-mail">Email</label>
+			<input type="email" name="email" value="" size="40" id="e-mail" aria-required="true" aria-invalid="false" />
+			<input type="submit" name="sumbit" value="submit" size="40" id="e-mail" aria-required="true" aria-invalid="false" />
+		</form>
+	</section>
+</div>

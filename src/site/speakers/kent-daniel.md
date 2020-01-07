@@ -1,9 +1,9 @@
 ---
-name: Geoff Heal
-sortName: Heal Geoff
-affiliations: Donald C. Waite III Professor of Social Enterprise, Economics Division; Bernstein Faculty Leader. Sanford C. Bernstein & Co. Center for Leadership and Ethics
-img: heal.jpg
-imgAlt: Geoff Heal
+name: Kent Daniel
+sortName: Daniel Kent
+affiliations: Senior Vice Dean of Faculty Affairs, Dean’s Office; William von Mueffling Professor of Business, Finance Division
+img: daniel.jpg
+imgAlt: Kent Daniel
 sessions: Investments in the Renewable Energy Transition
 ---
 

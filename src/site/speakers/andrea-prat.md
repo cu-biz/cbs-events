@@ -1,10 +1,10 @@
 ---
-name: Geoff Heal
-sortName: Heal Geoff
-affiliations: Donald C. Waite III Professor of Social Enterprise, Economics Division; Bernstein Faculty Leader. Sanford C. Bernstein & Co. Center for Leadership and Ethics
-img: heal.jpg
-imgAlt: Geoff Heal
-sessions: Investments in the Renewable Energy Transition
+name: Andrea Prat
+sortName: Prat Andrea
+affiliations: Richard Paul Richman Professor of Business, Economics Division
+img: prat.jpg
+imgAlt: Andrea Prat
+sessions: The 21st Century Energy Transition
 ---
 
 Bruce Usher is a Professor of Professional Practice and the Elizabeth B. Strickler '86 and Mark T. Gallogly '86 Faculty Director of the Tamer Center for Social Enterprise at Columbia Business School.
