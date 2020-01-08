@@ -1,4 +1,5 @@
 .main-nav {
+  position: relative;
 
    ul {
       list-style-type: none;

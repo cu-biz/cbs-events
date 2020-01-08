@@ -99,11 +99,25 @@ pre {
   }
 }
 
-.header-wrapper {
+#header-wrapper {
   position:fixed;
   top:0;
   width:100%;
   z-index: 10;
+  transition:all .5s;
+
+  &.opaque {
+    background:#fff;
+    border-bottom:1px solid $light-color;
+
+    #hermes {
+      fill:$accent-color;
+    }
+
+    #stacked, #oneline {
+      fill:$text-color;
+    }
+  }
 }
 
 .main-header {
@@ -136,13 +150,24 @@ pre {
 }
 
 .hero {
-  height:100vh;
-  background-image:url(../images/img-climate-hero.jpg);
-  background-position: center center;
-  background-size: cover;
+  position:relative;
   margin-bottom:2rem;
+  overflow:hidden;
+  height:100vh;
+
+  #video {
+    z-index-1:;
+    position:absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left:0;
+    min-width: 100%;
+    min-height: 100%;
+  }
 
   header {
+    position: relative;
     padding:50vh 0 1rem;
     border-bottom:1px solid #fff;
     color:#fff; 

@@ -4,7 +4,10 @@ subtitle: The Financial Costs of a Warming Planet
 layout: layouts/base.njk
 ---
 
-<div id="top" class="hero">
+<div id="hero" class="hero">
+	<video autoplay muted loop id="video">
+	  <source src="images/stock-footage-thick-plumes-of-dark-smoke-rise-from-a-amazon-rain-forest-in-brazil-that-is-on-fire-and-burning-due.webm" type="video/webm">
+	</video>
 	<header>
 		<h1>{{ title }}</h1>
 		<p>{{ subtitle }}</p>
@@ -88,15 +91,13 @@ layout: layouts/base.njk
 var isInViewport = function (elem) {
 var bounding = elem.getBoundingClientRect();
 	return (
-	    bounding.top >= 0 &&
-	    bounding.left >= 0 &&
-	    bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-	    bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+	    bounding.bottom <= 40
 	);
 };
 
-var hero = document.getElementsByClassName('hero');
-window.addEventListener('scroll', function(hero) {
- isInViewport(hero) ? console.log("hero in viewport") : console.log("hero out of viewport");
+var hero = document.getElementById('hero');
+var header = document.getElementById('header-wrapper');
+window.addEventListener('scroll', function(e) {
+	isInViewport(hero) ? header.classList.add('opaque') : header.classList.remove('opaque');
 });
 </script>
