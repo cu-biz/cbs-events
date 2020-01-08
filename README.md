@@ -1,10 +1,8 @@
-# EleventyOne
+# CBS Conference Site
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/056b4a67-70e6-4af4-9be5-dee151b8e906/deploy-status)](https://app.netlify.com/sites/eleventyone/deploys)
 
-Phil's first port of call when starting another project using Eleventy.
-
-This project scaffold includes:
+This repository serves as a basic scaffold for conference sites for Columbia Business School.
 
 - [Eleventy](https://11ty.io) with a skeleton site
 - A date format filter for Nunjucks based on [Luxon](https://moment.github.io/luxon)

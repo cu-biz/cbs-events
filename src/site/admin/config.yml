@@ -37,3 +37,13 @@ collections:
       - { label: "Location", name: "location", widget: "string" }
       - { label: "Start Time", name: "startTime", widget: "datetime" }
       - { label: "End Time", name: "endTime", widget: "datetime" }
+  # Our sponsors
+  - name: "sponsors" # Used in routes, e.g., /admin/collections/blog
+    label: "Sponsor" # Used in the UI
+    folder: "src/site/sponsors" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: "Sponsor Name", name: "title", widget: "string" }
+      - { label: "Sponsor Logo", name: "img", widget: "image", required: false }
+      - { label: "Sponsor Level", name: "level", widget: "string" }

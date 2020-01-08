@@ -14,13 +14,8 @@ module.exports = function(config) {
   config.addFilter("squash", require("./src/utils/filters/squash.js") );
   config.addFilter("dateDisplay", require("./src/utils/filters/date.js") );
 
-  config.addCollection("agenda", function(collection) {
-    return collection.getAll().filter(function(item){ return item.data.startTime }).sort(function(a, b) {
-      return a.data.startTime - b.data.startTime;
-    });
-  });
 
-  config.addCollection("newAgenda", function(collection) {
+  config.addCollection("agenda", function(collection) {
     let allSessions = collection.getAll().filter(function(item){ return item.data.startTime }).sort(function(a, b) {
       return a.data.startTime - b.data.startTime;
     });
