@@ -75,7 +75,7 @@ layout: layouts/base.njk
 <div class="wrapper">
 	<section id="register">
 		<h2>Register</h2>
-		<form>
+		<form name="register" netlify>
 			<label for="first-name">First Name</label>
 			<input type="text" name="fname" value="" size="40" id="first-name" aria required="true" aria-invalid="false" />
 			<label for="flast-name">Last Name</label>
