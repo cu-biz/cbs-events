@@ -20,7 +20,7 @@ layout: layouts/base.njk
   <h2>Overview</h2>
   <div class="summary">
    <p>Aliquam fermentum tortor nec sagittis faucibus. Curabitur non metus sodales, feugiat quam dapibus, consectetur nunc. Donec vel neque tincid. Duis urna dolor, convallis sed congue in, ultricies in lorem. Curabitur condimentum metus massa, ac sagittis risus scelerisque vitae.</p>
-   <p>Ut vestibulum turpis a sollicitudin laoreet. Praesent ante felis, pharetra ac metus in, eleifend blandit dolor. Vestibulum imperdiet quam nec ligula venenatis ultrices. Nulla vehicula mauris a diam semper, suscipit vehicula massa facilisis. Curabitur facilisis placerat.</p>
+   <p>Ut vestibulum turpis a sollicitudin laoreet. Praesent ante felis, pharetra ac metus in, eleifend blandit dolor. Vestibulum imperdiet quam nec ligula venenatis ultrices. Nulla vehicula mauris a diam semper, suscipit vehicula massa facilisis. Curabitur facilisis placerats.</p>
   </div>
  </section>
 </div>
