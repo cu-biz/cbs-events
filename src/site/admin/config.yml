@@ -17,7 +17,7 @@ collections:
     label: "Speaker" # Used in the UI
     folder: "src/site/speakers" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: {{slug}} # Filename template, e.g., YYYY-MM-DD-title.md
     identifier_field: name
     preview_path: speakers/{{slug}}
     fields: # The fields for each document, usually in front matter
@@ -32,7 +32,7 @@ collections:
     label: "Session" # Used in the UI
     folder: "src/site/sessions" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: {{slug}} # Filename template, e.g., YYYY-MM-DD-title.md
     preview_path: sessions/{{slug}}
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
@@ -44,7 +44,7 @@ collections:
     label: "Sponsor" # Used in the UI
     folder: "src/site/sponsors" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: {{slug}} # Filename template, e.g., YYYY-MM-DD-title.md
     preview_path: sponsors/{{slug}}
     fields: # The fields for each document, usually in front matter
       - { label: "Sponsor Name", name: "title", widget: "string" }
