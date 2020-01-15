@@ -9,7 +9,7 @@ const Sponsor = createClass({
 
     return html`
       <main>
-        <h1>${entry.getIn(["data", "title"], null)}</h1>
+        <h1>${entry.getIn(["title"], null)}</h1>
         ${this.props.widgetFor("body")}
       </main>
     `;

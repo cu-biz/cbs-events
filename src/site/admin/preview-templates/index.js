@@ -2,7 +2,7 @@ import Session from "/admin/preview-templates/sessions.js";
 import Speaker from "/admin/preview-templates/speakers.js";
 import Sponsor from "/admin/preview-templates/sponsors.js";
 
-// Register the Post component as the preview for entries in the blog collection
+// Register the component as the preview for entries in the collections
 CMS.registerPreviewTemplate("sessions", Session);
 CMS.registerPreviewTemplate("speakers", Speaker);
 CMS.registerPreviewTemplate("sponsors", Sponsor);

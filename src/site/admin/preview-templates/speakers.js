@@ -9,8 +9,8 @@ const Speaker = createClass({
 
     return html`
       <main>
-        <h1>${entry.getIn(["data", "title"], null)}</h1>
-        ${this.props.widgetFor("body")}
+        <h1>${entry.getIn(["title"], null)}</h1>
+        ${this.props.widgetFor("img")}
       </main>
     `;
   }
