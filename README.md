@@ -13,14 +13,14 @@ This repository serves as a basic scaffold for conference sites for Columbia Bus
 - Serverless (FaaS) development pipeline with [Netlify Dev](https://www.netlify.com/products/dev) and [Netlify Functions](https://www.netlify.com/products/functions)
 
 
-![Eleventy screenshot](./eleventyone-template.jpg)
+![CBS Events Hero screenshot](./img-cbsevents-template.jpg)
 
 
 ## Instructions
 
 To get your own instance of this 11ty starter project cloned and deploying to Netlify very quickly, just click the button below and follow the instructions.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/philhawksworth/eleventyone)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://github.com/cu-biz/cbs-events)
 
 
 ## Wait, what happens when I click that button?
