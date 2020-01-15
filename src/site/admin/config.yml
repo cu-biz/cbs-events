@@ -35,6 +35,7 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Location", name: "location", widget: "string" }
+      - { label: "Description", name: "description", widget: "markdown" }
       - { label: "Start Time", name: "startTime", widget: "datetime" }
       - { label: "End Time", name: "endTime", widget: "datetime" }
   # Our sponsors
