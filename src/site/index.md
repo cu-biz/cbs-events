@@ -32,7 +32,7 @@ layout: layouts/base.njk
 			<article>
 				<time class="event-time" datetime="{{ page.data.startTime }}">{{ page.data.startTime | dateDisplay("t") }}</time>
 				<h3><a href="{{ page.url }}">{{ page.data.title }}</a></h3>
-				<p class="event-description">{{ page.data.description }}</p>
+				<div class="event-description">{{ page.data.description }}</div>
 				<div class="speakers-block">
 					<h4>Speakers</h4>
 					{%- for item in page.data.speakers -%}

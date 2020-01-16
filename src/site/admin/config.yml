@@ -34,7 +34,7 @@ collections:
     slug: "" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Location", name: "location", widget: "string" }
+      - { label: "Location", name: "location", widget: "string", required: false }
       - { label: "Description", name: "description", widget: "markdown" }
       - { label: "Start Time", name: "startTime", widget: "datetime" }
       - { label: "End Time", name: "endTime", widget: "datetime" }
