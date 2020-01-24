@@ -1,12 +1,10 @@
 ---
-name: Andrea Prat
+name: Andrea Test
 sortName: Prat Andrea
-affiliations: Richard Paul Richman Professor of Business, Economics Division
+affiliations: 'Richard Paul Richman Professor of Business, Economics Division'
 img: prat.jpg
 imgAlt: Andrea Prat
-sessions: The 21st Century Energy Transition
 ---
-
 Bruce Usher is a Professor of Professional Practice and the Elizabeth B. Strickler '86 and Mark T. Gallogly '86 Faculty Director of the Tamer Center for Social Enterprise at Columbia Business School.
 
 Professor Usher teaches on the intersection of finance, social and environmental issues, and is a recipient of the Singhvi Prize for Scholarship in the Classroom, the Lear Award, and the Dean’s Award for Teaching Excellence.
