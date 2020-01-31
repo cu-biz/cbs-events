@@ -9,6 +9,8 @@ media_folder: "src/site/images" # Media files will be stored in the repo under i
 
 publish_mode: editorial_workflow # content is saved to a deploy preview as unpublished entries before approval/publishing
 
+show_preview_links: true
+
 logo_url: https://www8.gsb.columbia.edu/faculty-staff/sites/all/modules/custom/Website20/cbs_local_nav/imgs/logo.svg
 
 slug:
